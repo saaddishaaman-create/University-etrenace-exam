@@ -317,3 +317,22 @@ body{
 #toggleNav:hover{
     background:#212121;
 }
+@media (max-width: 768px){
+
+    .container{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .question-box{
+        width:100%;
+    }
+
+    .question-grid{
+        display:grid;
+        grid-template-columns:repeat(5,1fr);
+    }
+}
