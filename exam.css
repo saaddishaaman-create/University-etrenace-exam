@@ -62,51 +62,38 @@ body{
 
 /* SIDEBAR */
 
+.container{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+}
+
 .sidebar{
-    width:340px;
-    background:white;
-    border-radius:12px;
-    padding:25px;
-    box-shadow:0 6px 18px rgba(0,0,0,.08);
-    height:calc(100vh - 120px);
+    width:260px;
+    height:700px;
     overflow-y:auto;
 }
 
-.sidebar h2{
-    color:#222;
-    font-size:26px;
-    margin-bottom:18px;
-    border-bottom:2px solid #eee;
-    padding-bottom:10px;
+.question-box{
+    flex:1;
+    height:700px;
+}.sidebar{
+    width:260px;
+    height:700px;
+    overflow-y:auto;
+    background:#fff;
+    border-radius:10px;
+    padding:20px;
 }
 
-.sidebar p{
-    font-size:20px;
-    margin:12px 0;
-    font-weight:600;
-    color:#444;
+.container{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
 }
-
-/* QUESTION NAVIGATOR */
-
-.question-grid{
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:10px;
-    margin-top:20px;
-}
-
-.question-grid button{
-    width:48px;
-    height:48px;
-    border:none;
-    border-radius:8px;
-    background:#e0e0e0;
-    color:#222;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.25s;
+.question-box{
+    flex: 1;
+    min-height: 80vh;
 }
 
 .question-grid button:hover{
